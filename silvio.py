@@ -166,12 +166,12 @@ def jogar():
         print()
         if veri3 == jogo:
             print('		Parabéns você ganhou!!!')
-            time.sleep(1)
+            time.sleep(3)
             os.system('clear')
             jogar()
         if vidas == 0:
             print('		Perdeu!!! A palavra era: {}'.format(str(ling[palavra])))
-            time.sleep(1)
+            time.sleep(3)
             os.system('clear')
             jogar()
         letra = input('		Digite uma letra: ')
