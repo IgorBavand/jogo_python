@@ -166,11 +166,17 @@ def jogar():
         print()
         if veri3 == jogo:
             print('		Parabéns você ganhou!!!')
+            pygame.init()
+            pygame.mixer.music.load('acerto.ogg')
+            pygame.mixer.music.play()
             time.sleep(3)
             os.system('clear')
             jogar()
         if vidas == 0:
             print('		Perdeu!!! A palavra era: {}'.format(str(ling[palavra])))
+            pygame.init()
+            pygame.mixer.music.load('erro.ogg')
+            pygame.mixer.music.play()
             time.sleep(3)
             os.system('clear')
             jogar()
